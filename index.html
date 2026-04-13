@@ -349,18 +349,27 @@
     const LINKS = {
       input: {
         sales: "https://docs.google.com/spreadsheets/d/1LMUAXQTggXfmLlQsgno3vvAITWuBWo1H4wBlj3FsQXQ/edit?gid=1147819526#gid=1147819526",
-        production: "https://docs.google.com/",
-        procurement: "https://docs.google.com/",
+        procurement: "https://docs.google.com/spreadsheets/d/1ZUIqtK6VynbxWx3aTAEW3HNF5CeeYxMVirQskqOuCcA/edit?gid=1328937704#gid=1328937704",
+        production: "https://docs.google.com/spreadsheets/d/1jOsra72He088EcUOpgt3BLSLyrmgJwr331fFHAjVa9U/edit?gid=780901079#gid=780901079",
+        personnel: "https://docs.google.com/spreadsheets/d/1Z2YK04E8DPjhvM1S_5dBMMY1Tns5CmSDAxJTvIJoy0M/edit?gid=1808876236#gid=1808876236",
+        clients: "https://docs.google.com/spreadsheets/d/13KI1wPqJN0p3Y355u-eC0inYWvZGprYOt0RcZ4Zz48w/edit?gid=1208942478#gid=1208942478",
+        inventory: "https://docs.google.com/spreadsheets/d/13b1DC7XfliTABKjGWPOjYFPNfcWA0g-ug_qwKuTEJpk/edit?gid=202931609#gid=202931609",
+        claims: "https://docs.google.com/spreadsheets/d/1bx0fLwpeN2_a2ubLUqrKfMo-f0-Ui8mCEpZYKr1bo40/edit?gid=1994356135#gid=1994356135",
+        finance: "https://docs.google.com/spreadsheets/d/1yyn5Y5lrk1bb-udjcSwyx6BnPR_dMj7T8oow2gOAMTU/edit?gid=1850952711#gid=1850952711",
+        warehouse: "https://docs.google.com/spreadsheets/d/1IYN6OhRNAvdUfsecLQhqsfmLWzIF9pE7pFPH7LXN9KM/edit?gid=1529677914#gid=1529677914",
+        payments: "https://docs.google.com/spreadsheets/d/13sVwg5Iy2TXdTgwyRiA4R3XnNrre4qQQhoJF3GSDRgw/edit?gid=1375713977#gid=1375713977",
         logistics: "https://docs.google.com/",
-        personnel: "https://docs.google.com/",
-        finance: "https://docs.google.com/",
+
+
+
+        
         marketing: "https://docs.google.com/",
-        warehouse: "https://docs.google.com/",
-        clients: "https://docs.google.com/",
+        
+        
         suppliers: "https://docs.google.com/",
-        claims: "https://docs.google.com/",
-        inventory: "https://docs.google.com/",
-        payments: "https://docs.google.com/",
+        
+        
+        
         receivables: "https://docs.google.com/",
         other: "https://docs.google.com/"
       },
@@ -401,24 +410,22 @@
         { key: "forecast-section", title: "Прогнозирование", description: "Сценарии, прогноз продаж и затрат, прогноз финансового результата.", action: "forecast-login" }
       ],
       input: [
-        { key: "sales", title: "01 Продажи по каналам", description: "Ввод данных по продажам (каналы и клиенты)", section: "input" },
-        { key: "production", title: "Производство", description: "Операционные данные по производственным участкам", section: "input" },
-        { key: "procurement", title: "Закупки", description: "Первичные таблицы по закупкам и поставкам", section: "input" },
-        { key: "logistics", title: "Логистика", description: "Логистические данные и транспортные расходы", section: "input" },
-        { key: "personnel", title: "Персонал", description: "Штат, ФОТ, графики и кадровые данные", section: "input" },
-        { key: "finance", title: "Финансы", description: "Платежи, бюджеты и ввод финансовых показателей", section: "input" },
-        { key: "marketing", title: "Маркетинг", description: "Бюджеты кампаний и маркетинговые активности", section: "input" },
-        { key: "warehouse", title: "Склад", description: "Остатки, движения и складские формы", section: "input" },
-        { key: "clients", title: "Клиенты", description: "Данные по клиентским сегментам и заказам", section: "input" },
-        { key: "suppliers", title: "Поставщики", description: "Реестр поставщиков и условия закупки", section: "input" },
-        { key: "claims", title: "Рекламации", description: "Претензии, потери и корректировки", section: "input" },
-        { key: "inventory", title: "Инвентаризация", description: "Инвентаризационные ведомости и сверки", section: "input" },
-        { key: "payments", title: "Платёжный календарь", description: "Плановые и фактические платежи", section: "input" },
-        { key: "receivables", title: "Дебиторская задолженность", description: "Контроль дебиторки и статусов оплаты", section: "input" },
-        { key: "other", title: "Прочие данные", description: "Дополнительные операционные данные для модели", section: "input" }
+        { key: "sales", title: "01 Продажи по каналам в деньгах", description: "Ввод данных по продажам (каналы и клиенты)", section: "input" },
+        { key: "procurement", title: "02 Закупки материалов", description: "Ввод данных по закупкам", section: "input" },
+        { key: "production", title: "03 Затраты цеха", description: "Операционные данные по затрам", section: "input" },
+        { key: "personnel", title: "04 Затраты на персонал", description: "Зарплаты и содержание офиса", section: "input" },
+        { key: "clients", title: "05 Затраты на продажи ", description: "Затраты на продажу, скидки, бонусы, аренда", section: "input" },
+        { key: "inventory", title: "06 Цена продажи ", description: "Расходыне цены", section: "input" },
+        { key: "claims", title: "07 Продажи в штуках", description: "Претензии, потери и корректировки", section: "input" },
+        { key: "finance", title: "08 Налоги", description: "План и факт оплаты налогов", section: "input" },
+        { key: "warehouse", title: "09 Амортизация", description: "Фактическая амортизация", section: "input" },
+        { key: "payments", title: "010 Кредиты ", description: "Плановые и фактические оплаты по кредитам", section: "input" },
+
+
+
       ],
       analytics: [
-        { key: "balance", title: "Фин анализ компании", description: "Основной анализ", section: "analytics" },
+        { key: "balance", title: "01 Сводный отчет", description: "Основной анализ", section: "analytics" },
         { key: "dashboards", title: "Дашборды", description: "Визуальные панели и управленческие отчёты", section: "analytics" },
         { key: "ratios", title: "Финансовые коэффициенты", description: "Коэффициенты ликвидности, рентабельности и оборачиваемости", section: "analytics" },
         { key: "pnl", title: "P&L", description: "Отчёт о прибылях и убытках", section: "analytics" },
